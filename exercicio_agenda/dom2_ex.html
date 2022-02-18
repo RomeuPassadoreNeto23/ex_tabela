@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ola digite</h1>
+    <input type="text" id="textNome" value="digite">
+    <input type="text" id="textSobrenome" value="digite">
+
+    <button onclick="escrever()" >Só clicar</button>
+    <div id="smg"></div>
+
+
+
+    <script>
+        const textNome2 = document.querySelector("#textNome");
+        const textSobrenome2 = document.querySelector("#textSobrenome");
+        function escrever(){
+            var nome = textNome2.value;
+            var sobrenome = textSobrenome2.value;
+            document.querySelector("#smg").innerHTML =  "informe seu nome =  <b> "+nome+"</b> imfore seu sobrenome = <b> " +sobrenome+"</b>";
+           /*  document.querySelector('#smg').value = `${nome}  ${sobrenome}`; */
+
+
+
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+SELECT MODELO FROM `veiculo` WHERE Ano_fabricacao > 2010 ORDER BY MODELO ASC
+SELECT cliente FROM orcamentos WHERE valor_servico BETWEEN 100 AND 350 AND NOT valor_servico=150
